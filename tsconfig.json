@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "project": "sanity-sap-apis",
+    "target": "es2020",                          
+    "module": "commonjs",  
+    "strict": true,                   
+    "lib": ["es6"],                              
+    "allowJs": true,                       
+    "outDir": "./dist",                        
+    "rootDir": "./src",                       
+    "removeComments": true,                
+    "typeRoots": [
+      "./node_modules/@types",
+      "./src/@types"
+    ],                          
+    "esModuleInterop": true,                  
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,        
+    "emitDecoratorMetadata": true,         
+    "skipLibCheck": true,                     
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@controllers/*": ["./src/controllers/*"],
+      "@models/*": ["./src/models/*"],
+      "@config/*": ["./src/config/*"]
+    }
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
